@@ -27,6 +27,15 @@
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
+    <!-- Google Analytics (GA4) -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-XXXXXXXXXX"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+      gtag('config', 'G-XXXXXXXXXX'); // <-- Replace with your GA4 Measurement ID
+    </script>
+
     <style>
         /* General Styles */
         body {
@@ -76,7 +85,7 @@
             font-family: 'Montserrat', sans-serif;
             font-size: 1.75rem;
             font-weight: 600;
-            margin-bottom: 15px;
+            margin-bottom: 25px;
         }
         ul {
             padding-left: 22px;
@@ -94,9 +103,6 @@
         a:hover {
             color: #f2b705;
         }
-        .projects li {
-            margin-bottom: 12px;
-        }
         footer {
             text-align: center;
             padding: 35px 20px;
@@ -104,6 +110,56 @@
             color: #ffffff;
             margin-top: 50px;
             font-size: 1rem;
+        }
+
+        /* Projects Cards */
+        .projects-cards {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+        .project-card {
+            flex: 1 1 calc(50% - 20px);
+            background: #f9f9f9;
+            border-radius: 12px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .project-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+        }
+        .project-card h3 {
+            margin-top: 0;
+            font-family: 'Montserrat', sans-serif;
+            font-size: 1.25rem;
+            margin-bottom: 12px;
+            color: #0b3c5d;
+        }
+        .project-card p {
+            margin: 0 0 15px 0;
+            font-size: 0.95rem;
+            line-height: 1.5;
+        }
+        .project-card a {
+            display: inline-block;
+            padding: 8px 18px;
+            border-radius: 8px;
+            background-color: #0b3c5d;
+            color: #fff;
+            font-weight: 600;
+            font-size: 0.95rem;
+            text-align: center;
+            transition: background-color 0.3s, transform 0.3s;
+        }
+        .project-card a:hover {
+            background-color: #f2b705;
+            color: #000;
+            transform: translateY(-2px);
         }
 
         @keyframes fadeIn {
@@ -116,11 +172,13 @@
             header h1 { font-size: 2.2rem; }
             header p { font-size: 1.1rem; }
             section { padding: 25px; margin-bottom: 25px; }
-            h2 { font-size: 1.45rem; }
+            h2 { font-size: 1.45rem; margin-bottom: 20px; }
             li { font-size: 0.95rem; margin-bottom: 10px; }
             .container { width: 95%; }
             footer { padding: 25px; font-size: 0.9rem; }
             a { font-size: 0.95rem; }
+            .projects-cards { flex-direction: column; gap: 15px; }
+            .project-card { flex: 1 1 100%; }
         }
     </style>
 </head>
@@ -159,11 +217,23 @@
 
         <section class="projects">
             <h2>📊 Projects</h2>
-            <ul>
-                <li><strong>HR Analytics Dashboard (Power BI)</strong> – Visualized HR data for insights into performance, gender distribution, and employee metrics.</li>
-                <li><strong>COVID-19 Data Analysis (Python)</strong> – Conducted data cleaning, EDA, and visualization for trend insights.</li>
-                <li><strong>Inventory & Sales Dashboard</strong> – Built an interactive business intelligence dashboard for product tracking.</li>
-            </ul>
+            <div class="projects-cards">
+                <div class="project-card">
+                    <h3>HR Analytics Dashboard (Power BI)</h3>
+                    <p>Visualized HR data for insights into performance, gender distribution, and employee metrics.</p>
+                    <a href="https://github.com/oluwaseyiisrael1/hr-analytics-dashboard" target="_blank">View Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>COVID-19 Data Analysis (Python)</h3>
+                    <p>Conducted data cleaning, exploratory data analysis (EDA), and visualization for trend insights.</p>
+                    <a href="https://github.com/oluwaseyiisrael1/covid19-data-analysis" target="_blank">View Details</a>
+                </div>
+                <div class="project-card">
+                    <h3>Inventory & Sales Dashboard</h3>
+                    <p>Built an interactive business intelligence dashboard for product tracking and insights.</p>
+                    <a href="https://github.com/oluwaseyiisrael1/inventory-sales-dashboard" target="_blank">View Details</a>
+                </div>
+            </div>
         </section>
 
         <section>
