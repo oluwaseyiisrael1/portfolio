@@ -41,7 +41,146 @@
 </script>
 
 <style>
-    /* STYLE KEPT EXACTLY AS PROVIDED */
+    /* General Styles */
+    body {
+        font-family: 'Roboto', Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        background: linear-gradient(135deg, #0b3c5d, #1d2731);
+        color: #222;
+        line-height: 1.65;
+    }
+    header {
+        background: linear-gradient(135deg, #0b3c5d, #f2b705);
+        color: #ffffff;
+        padding: 80px 20px 60px;
+        text-align: center;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    header h1 {
+        margin: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 2.6rem;
+        font-weight: 700;
+        line-height: 1.2;
+    }
+    header p {
+        margin-top: 12px;
+        font-size: 1.25rem;
+        font-weight: 500;
+    }
+
+    .container {
+        width: 90%;
+        max-width: 900px;
+        margin: 50px auto;
+    }
+    section {
+        background: #ffffff;
+        padding: 35px;
+        margin-bottom: 35px;
+        border-radius: 14px;
+        box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+        color: #222;
+    }
+    h2 {
+        color: #0b3c5d;
+        margin-top: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.75rem;
+        font-weight: 600;
+        margin-bottom: 25px;
+    }
+    ul { padding-left: 22px; }
+    li {
+        margin-bottom: 14px;
+        font-size: 1rem;
+    }
+    a {
+        color: #0b3c5d;
+        text-decoration: none;
+        font-weight: 600;
+        transition: color 0.3s;
+    }
+    a:hover { color: #f2b705; }
+
+    footer {
+        text-align: center;
+        padding: 35px 20px;
+        background: #0b3c5d;
+        color: #ffffff;
+        margin-top: 50px;
+        font-size: 1rem;
+    }
+
+    /* Projects Cards */
+    .projects-cards {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    .project-card {
+        flex: 1 1 calc(50% - 20px);
+        background: #f9f9f9;
+        border-radius: 12px;
+        padding: 20px;
+        box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+        transition: transform 0.3s, box-shadow 0.3s;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+    }
+    .project-card:hover {
+        transform: translateY(-5px);
+        box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+    .project-card h3 {
+        margin-top: 0;
+        font-family: 'Montserrat', sans-serif;
+        font-size: 1.25rem;
+        margin-bottom: 12px;
+        color: #0b3c5d;
+    }
+    .project-card p {
+        margin: 0 0 15px 0;
+        font-size: 0.95rem;
+        line-height: 1.5;
+    }
+    .project-card a {
+        display: inline-block;
+        padding: 8px 18px;
+        border-radius: 8px;
+        background-color: #0b3c5d;
+        color: #fff;
+        font-weight: 600;
+        font-size: 0.95rem;
+        text-align: center;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .project-card a:hover {
+        background-color: #f2b705;
+        color: #000;
+        transform: translateY(-2px);
+    }
+
+    @keyframes fadeIn {
+        from { opacity: 0; transform: translateY(-10px); }
+        to { opacity: 1; transform: translateY(0); }
+    }
+
+    /* Mobile improvements */
+    @media only screen and (max-width: 600px) {
+        header h1 { font-size: 2.2rem; }
+        header p { font-size: 1.1rem; }
+        section { padding: 25px; margin-bottom: 25px; }
+        h2 { font-size: 1.45rem; margin-bottom: 20px; }
+        li { font-size: 0.95rem; margin-bottom: 10px; }
+        .container { width: 95%; }
+        footer { padding: 25px; font-size: 0.9rem; }
+        a { font-size: 0.95rem; }
+        .projects-cards { flex-direction: column; gap: 15px; }
+        .project-card { flex: 1 1 100%; }
+    }
 </style>
 ```
 
@@ -94,7 +233,3 @@
 
 </body>
 </html>
-
-<!-- GitHub Pages rebuild -->
-
-
