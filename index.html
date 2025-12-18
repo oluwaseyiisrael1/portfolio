@@ -17,7 +17,7 @@
 <meta property="og:description" content="Professional portfolio of Israel Oluwaseyi">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://oluwaseyiisrael1.github.io/portfolio/">
-<meta property="og:image" content="https://oluwaseyiisrael1.github.io/portfolio/israel-oluwaseyi-profile.webp">
+<meta property="og:image" content="https://raw.githubusercontent.com/oluwaseyiisrael1/portfolio/main/profile.png">
 
 <!-- Google Fonts -->
 <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
@@ -86,6 +86,8 @@ h2 {
     font-family: 'Montserrat', sans-serif;
 }
 
+ul { padding-left: 20px; }
+
 .projects-cards {
     display: flex;
     flex-wrap: wrap;
@@ -119,13 +121,19 @@ footer {
     display: none;
     cursor: pointer;
 }
+#scrollTopBtn:hover { background: #f2b705; color: #000; }
+
+@media(max-width:600px){
+    header h1 { font-size: 2.2rem; }
+    .projects-cards { flex-direction: column; }
+}
 </style>
 </head>
 
 <body>
 
 <header>
-    <img src="profile.png" alt="Israel Oluwaseyi Profile Picture" loading="lazy">
+    <img src="https://raw.githubusercontent.com/oluwaseyiisrael1/portfolio/main/profile.png" alt="Israel Oluwaseyi">
     <h1>Israel Oluwaseyi</h1>
     <p>Data Analyst | ICT4D Consultant | Business & NGO Program Analyst</p>
 </header>
@@ -133,13 +141,13 @@ footer {
 <div style="text-align:center; margin-top:25px;">
     <a href="https://drive.google.com/file/d/1WfYhcm5IlJXmtKMHNGldDUgjn06vo7ZU/view"
        target="_blank"
-       style="background:#ffcc00;padding:14px 28px;border-radius:10px;text-decoration:none;">
+       style="background:#ffcc00;padding:14px 28px;border-radius:10px;text-decoration:none;font-weight:bold;">
        Download My CV
     </a>
 
     <a href="https://wa.me/?text=Check%20out%20my%20portfolio:%20https://oluwaseyiisrael1.github.io/portfolio/"
        target="_blank"
-       style="background:#25D366;padding:14px 28px;border-radius:10px;color:#fff;text-decoration:none;">
+       style="background:#25D366;padding:14px 28px;border-radius:10px;color:#fff;text-decoration:none;font-weight:bold;">
        📲 Share on WhatsApp
     </a>
 </div>
@@ -150,22 +158,70 @@ footer {
 <h2>👤 About Me</h2>
 <p>
 Data-driven professional with experience in ICT4D, public health programs, and data analytics.
+I support malaria interventions and NGO programs while building strong analytics solutions
+using Python, SQL, Excel, and Power BI.
 </p>
 </section>
 
-<section class="projects">
+<section>
+<h2>🛠️ Skills</h2>
+<ul>
+<li>Python • SQL • Power BI • Excel</li>
+<li>Data Cleaning & Visualization</li>
+<li>ICT4D & Field Data Systems</li>
+<li>Monitoring, Evaluation & Reporting</li>
+</ul>
+</section>
+
+<section>
 <h2>📊 Projects</h2>
 <div class="projects-cards">
 <div class="project-card">HR Analytics Dashboard (Power BI)</div>
 <div class="project-card">COVID-19 Data Analysis (Python)</div>
+<div class="project-card">Inventory & Sales Dashboard</div>
 </div>
+</section>
+
+<section>
+<h2>💼 Professional Experience</h2>
+<ul>
+<li><strong>ICT4D Consultant – NMEP (Global Fund Malaria)</strong></li>
+<li><strong>Technical Facilitator – WHO</strong></li>
+</ul>
+</section>
+
+<section>
+<h2>🎓 Education</h2>
+<ul>
+<li>B.Sc Economics – Kwara State University</li>
+<li>HND Business Administration – Polytechnic of Ibadan</li>
+<li>OND Business Administration – YABATECH</li>
+</ul>
+</section>
+
+<section>
+<h2>📜 Certifications</h2>
+<ul>
+<li>Data Analysis – Data Skills Africa</li>
+<li>Proficiency Certificate in Management – NIM</li>
+</ul>
+</section>
+
+<section>
+<h2>🔗 Links</h2>
+<ul>
+<li><a href="https://www.linkedin.com/in/oluwaseyi-israel/" target="_blank">LinkedIn</a></li>
+<li><a href="https://github.com/oluwaseyiisrael1" target="_blank">GitHub</a></li>
+<li><a href="mailto:oluwaseyiisrael2@gmail.com">Email Me</a></li>
+</ul>
 </section>
 
 </div>
 
 <footer>
 © 2025 Israel Oluwaseyi | Professional Portfolio<br><br>
-<a href="https://wa.me/2348036852162" style="background:#25D366;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;">
+<a href="https://wa.me/2348036852162"
+   style="background:#25D366;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;">
 💬 Chat with Me on WhatsApp
 </a>
 </footer>
@@ -174,14 +230,10 @@ Data-driven professional with experience in ICT4D, public health programs, and d
 
 <script>
 window.onscroll = () => {
-    document.getElementById("scrollTopBtn").style.display =
-        document.documentElement.scrollTop > 200 ? "block" : "none";
+document.getElementById("scrollTopBtn").style.display =
+document.documentElement.scrollTop > 200 ? "block" : "none";
 };
 </script>
 
 </body>
 </html>
-
-
-
-
