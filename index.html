@@ -1,162 +1,173 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Israel Oluwaseyi | Portfolio</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Israel Oluwaseyi – Data Analyst, ICT4D Consultant, and Business & NGO Program Analyst. Explore my portfolio, projects, skills, and professional experience.">
-    <meta name="keywords" content="Data Analyst, ICT4D Consultant, Business Analyst, NGO Program Analyst, Python, SQL, Power BI, Excel">
-    <meta name="author" content="Israel Oluwaseyi">
-    <meta name="robots" content="index, follow">
+<title>Israel Oluwaseyi | Portfolio</title>
 
-    <!-- Open Graph -->
-    <meta property="og:title" content="Israel Oluwaseyi | Data Analyst Portfolio">
-    <meta property="og:description" content="Explore projects, dashboards, and analytics work by Israel Oluwaseyi.">
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://oluwaseyiisrael1.github.io/portfolio/">
-    <meta property="og:image" content="https://oluwaseyiisrael1.github.io/portfolio/israel-oluwaseyi-profile.webp">
+<!-- SEO -->
+<meta name="description" content="Israel Oluwaseyi – Data Analyst, ICT4D Consultant, Business & NGO Program Analyst">
+<meta name="keywords" content="Data Analyst, ICT4D, Power BI, Python, SQL, NGO Analytics">
+<meta name="author" content="Israel Oluwaseyi">
+<meta name="robots" content="index, follow">
 
-    <!-- Twitter Card -->
-    <meta name="twitter:card" content="summary_large_image">
+<!-- Open Graph -->
+<meta property="og:title" content="Israel Oluwaseyi | Data Analyst Portfolio">
+<meta property="og:description" content="Professional portfolio of Israel Oluwaseyi">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://oluwaseyiisrael1.github.io/portfolio/">
+<meta property="og:image" content="https://oluwaseyiisrael1.github.io/portfolio/israel-oluwaseyi-profile.webp">
 
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
+<!-- Google Fonts -->
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 
-    <!-- Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-W53YQM9LRT"></script>
-    <script>
-      window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
-      gtag('config', 'G-W53YQM9LRT');
-    </script>
+<!-- Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=G-W53YQM9LRT"></script>
+<script>
+window.dataLayer = window.dataLayer || [];
+function gtag(){dataLayer.push(arguments);}
+gtag('js', new Date());
+gtag('config', 'G-W53YQM9LRT');
+</script>
 
-    <style>
-        body {
-            font-family: 'Roboto', Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            background: linear-gradient(135deg, #0b3c5d, #1d2731);
-            color: #222;
-            line-height: 1.65;
-            scroll-behavior: smooth;
-        }
-        header {
-            background: linear-gradient(135deg, #0b3c5d, #f2b705);
-            color: #ffffff;
-            padding: 100px 20px 60px;
-            text-align: center;
-            animation: fadeIn 1.5s ease-in-out;
-        }
-        header img {
-            width: 140px;
-            height: 140px;
-            border-radius: 50%;
-            border: 4px solid #fff;
-            object-fit: cover;
-            margin-bottom: 15px;
-        }
-        header h1 {
-            margin: 0;
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.6rem;
-        }
-        header p {
-            margin-top: 12px;
-            font-size: 1.25rem;
-        }
-        .container {
-            width: 90%;
-            max-width: 900px;
-            margin: 50px auto;
-        }
-        section {
-            background: #ffffff;
-            padding: 35px;
-            margin-bottom: 35px;
-            border-radius: 14px;
-            box-shadow: 0 6px 18px rgba(0,0,0,0.15);
-        }
-        h2 {
-            color: #0b3c5d;
-            font-family: 'Montserrat', sans-serif;
-        }
-        a {
-            color: #0b3c5d;
-            font-weight: 600;
-            text-decoration: none;
-        }
-        a:hover { color: #f2b705; }
+<style>
+body {
+    margin: 0;
+    font-family: 'Roboto', Arial, sans-serif;
+    background: linear-gradient(135deg, #0b3c5d, #1d2731);
+    color: #222;
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
 
-        .projects-cards {
-            display: flex;
-            flex-wrap: wrap;
-            gap: 20px;
-        }
-        .project-card {
-            flex: 1 1 calc(50% - 20px);
-            background: #f9f9f9;
-            border-radius: 12px;
-            padding: 20px;
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
-        }
+header {
+    background: linear-gradient(135deg, #0b3c5d, #f2b705);
+    color: #fff;
+    padding: 100px 20px 60px;
+    text-align: center;
+}
 
-        footer {
-            text-align: center;
-            padding: 35px;
-            background: #0b3c5d;
-            color: #fff;
-        }
+header img {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    border: 4px solid #fff;
+    object-fit: cover;
+    margin-bottom: 15px;
+}
 
-        #scrollTopBtn {
-            position: fixed;
-            bottom: 30px;
-            right: 30px;
-            background: #0b3c5d;
-            color: #fff;
-            border: none;
-            padding: 12px 18px;
-            border-radius: 50%;
-            font-size: 20px;
-            display: none;
-            cursor: pointer;
-        }
-    </style>
+header h1 {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 2.6rem;
+}
+
+header p {
+    font-size: 1.2rem;
+}
+
+.container {
+    width: 90%;
+    max-width: 900px;
+    margin: 50px auto;
+}
+
+section {
+    background: #fff;
+    padding: 35px;
+    margin-bottom: 30px;
+    border-radius: 14px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.15);
+}
+
+h2 {
+    color: #0b3c5d;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.projects-cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.project-card {
+    flex: 1 1 calc(50% - 20px);
+    background: #f9f9f9;
+    padding: 20px;
+    border-radius: 12px;
+}
+
+footer {
+    background: #0b3c5d;
+    color: #fff;
+    text-align: center;
+    padding: 35px;
+}
+
+#scrollTopBtn {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background: #0b3c5d;
+    color: #fff;
+    border: none;
+    padding: 12px 18px;
+    border-radius: 50%;
+    font-size: 20px;
+    display: none;
+    cursor: pointer;
+}
+</style>
 </head>
 
 <body>
 
 <header>
-    <img src="israel-oluwaseyi-profile.webp" alt="Israel Oluwaseyi Profile Picture">
+    <img src="israel-oluwaseyi-profile.webp" alt="Israel Oluwaseyi">
     <h1>Israel Oluwaseyi</h1>
     <p>Data Analyst | ICT4D Consultant | Business & NGO Program Analyst</p>
 </header>
 
 <div style="text-align:center; margin-top:25px;">
-    <a href="https://drive.google.com/file/d/1WfYhcm5IlJXmtKMHNGldDUgjn06vo7ZU/view" target="_blank"
-       style="background:#ffcc00; padding:14px 28px; border-radius:10px;">
+    <a href="https://drive.google.com/file/d/1WfYhcm5IlJXmtKMHNGldDUgjn06vo7ZU/view"
+       target="_blank"
+       style="background:#ffcc00;padding:14px 28px;border-radius:10px;text-decoration:none;">
        Download My CV
     </a>
 
     <a href="https://wa.me/?text=Check%20out%20my%20portfolio:%20https://oluwaseyiisrael1.github.io/portfolio/"
        target="_blank"
-       style="background:#25D366; padding:14px 28px; border-radius:10px; color:#fff;">
+       style="background:#25D366;padding:14px 28px;border-radius:10px;color:#fff;text-decoration:none;">
        📲 Share on WhatsApp
     </a>
 </div>
 
 <div class="container">
-    <!-- ALL YOUR SECTIONS REMAIN UNCHANGED -->
+
+<section>
+<h2>👤 About Me</h2>
+<p>
+Data-driven professional with experience in ICT4D, public health programs, and data analytics.
+</p>
+</section>
+
+<section class="projects">
+<h2>📊 Projects</h2>
+<div class="projects-cards">
+<div class="project-card">HR Analytics Dashboard (Power BI)</div>
+<div class="project-card">COVID-19 Data Analysis (Python)</div>
+</div>
+</section>
+
 </div>
 
 <footer>
-    © 2025 Israel Oluwaseyi | Professional Portfolio <br><br>
-    <a href="https://wa.me/2348036852162" target="_blank"
-       style="background:#25D366; padding:10px 22px; border-radius:8px; color:#fff;">
-       💬 Chat with Me on WhatsApp
-    </a>
+© 2025 Israel Oluwaseyi | Professional Portfolio<br><br>
+<a href="https://wa.me/2348036852162" style="background:#25D366;color:#fff;padding:10px 22px;border-radius:8px;text-decoration:none;">
+💬 Chat with Me on WhatsApp
+</a>
 </footer>
 
 <button id="scrollTopBtn" onclick="window.scrollTo({top:0,behavior:'smooth'})">⬆️</button>
